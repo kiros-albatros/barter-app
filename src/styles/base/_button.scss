@@ -1,0 +1,9 @@
+.btn {
+    border-radius: 10px;
+    background-color: $color-primary;
+    color: $color-text;
+
+    &--entry {
+        margin-right: 15px;
+    }
+}

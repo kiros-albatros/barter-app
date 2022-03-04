@@ -1,0 +1,43 @@
+@import "../../styles/abstract/_constants";
+@import "../../styles/abstract/_mixins";
+
+.burger {
+    display: none;
+    width: 40px;
+    height: 25px;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @include media-tablet-big {
+        display: flex;
+    }
+
+    @include media-mobile {
+        margin-top: 2px;
+    }
+
+    &__line {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: $color-primary;
+        transition: ease 0.3s;
+        border-radius: 5px;
+    }
+}
+
+.burger--rotated {
+
+    .burger__line--top {
+        transform: rotate(45deg) translate(10px, 10px);
+
+    }
+
+    .burger__line--middle {
+        display: none;
+    }
+
+    .burger__line--bottom {
+        transform: rotate(-45deg) translate(5px, -6px);
+    }
+}

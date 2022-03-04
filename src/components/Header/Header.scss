@@ -1,4 +1,8 @@
+@import "../../styles/abstract/_constants";
+@import "../../styles/abstract/_mixins";
+
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }

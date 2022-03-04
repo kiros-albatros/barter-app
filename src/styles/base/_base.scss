@@ -1,0 +1,39 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    @include font($size: 1.6rem, $height: 2.6rem, $weight: normal);
+    background-color: $color-main;
+    max-width: $content-width;
+    width: 90%;
+    margin: 20px auto;
+
+    @include media-mobile {
+        @include font($size: 1.2rem, $height: 2.6rem, $weight: normal);
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-size: 1.4rem;
+    border: none;
+    outline: none;
+    padding: 7px 10px;
+    cursor: pointer;
+
+    @include media-mobile {
+        padding: 5px 10px;
+        @include font($size: 1.2rem, $height: 2.6rem, $weight: normal);
+    }
+}
