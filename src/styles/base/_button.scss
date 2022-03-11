@@ -1,9 +1,30 @@
+button {
+    font-size: 1.4rem;
+    border: none;
+    outline: none;
+    padding: 7px 10px;
+    cursor: pointer;
+
+    @include media-mobile {
+        padding: 3px 10px;
+        @include font($size: 1.2rem, $height: 2.6rem, $weight: normal);
+    }
+}
+
 .btn {
     border-radius: 10px;
     background-color: $color-primary;
     color: $color-text;
 
+    &:hover {
+        background-color: $color-primary-hover;
+    }
+
     &--entry {
         margin-right: 15px;
+    }
+
+    @include media-tablet {
+        width: 120px;
     }
 }

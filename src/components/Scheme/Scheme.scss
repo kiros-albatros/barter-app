@@ -1,0 +1,40 @@
+@import "../../styles/abstract/_constants";
+@import "../../styles/abstract/_mixins";
+
+.scheme {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+
+    @include media-mobile {
+        flex-direction: column;
+    }
+
+    &__item {
+        flex-basis: 25%;
+        outline: 2px solid $color-primary;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__image {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    &__arrow {
+        width: 50px;
+        transform: rotate(180deg);
+        display: flex;
+        align-items: center;
+
+        @include media-mobile {
+            margin: 30px auto;
+            transform: rotate(-90deg);
+        }
+    }
+}

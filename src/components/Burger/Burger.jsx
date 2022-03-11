@@ -1,19 +1,20 @@
-import { useState } from "react";
 import "./Burger.scss";
 
-const Burger = () => {
-	const [burgerState, setburgerState] = useState("");
+import { useDispatch, useSelector } from "react-redux";
 
-	function burgerToggle() {
-		if (burgerState !== "burger--rotated") {
-			setburgerState("burger--rotated");
-		} else {
-			setburgerState("");
-		}
-	}
+const Burger = () => {
+	const dispatch = useDispatch();
+	const burgerState = useSelector((state) => state.burgerState);
+	//	console.log(burgerState);
+
+	const rotateLines = () => {
+		dispatch({ type: "BURGER_ROTATE", payload: "burger--rotated" });
+	};
+
+	//	const [burgerState, setburgerState] = useState("");
 
 	return (
-		<div className={`burger ${burgerState}`} onClick={burgerToggle}>
+		<div className={`burger ${burgerState}`} onClick={() => rotateLines()}>
 			<span className="burger__line burger__line--top"></span>
 			<span className="burger__line burger__line--middle"></span>
 			<span className="burger__line burger__line--bottom"></span>
@@ -22,3 +23,5 @@ const Burger = () => {
 };
 
 export default Burger;
+
+/*`burger ${burgerState}`} onClick={burgerToggle*/

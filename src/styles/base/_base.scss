@@ -25,15 +25,7 @@ a {
     color: inherit;
 }
 
-button {
-    font-size: 1.4rem;
-    border: none;
-    outline: none;
-    padding: 7px 10px;
-    cursor: pointer;
-
-    @include media-mobile {
-        padding: 5px 10px;
-        @include font($size: 1.2rem, $height: 2.6rem, $weight: normal);
-    }
+h2 {
+    margin: auto;
+    text-align: center;
 }
