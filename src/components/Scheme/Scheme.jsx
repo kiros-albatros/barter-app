@@ -1,7 +1,7 @@
 import "./Scheme.scss";
 import image1 from "../../images/1.png";
-import image2 from "../../images/2.jpeg";
-import image3 from "../../images/3.jpeg";
+import image2 from "../../images/5.png";
+import image3 from "../../images/6.jpg";
 import next from "../../images/next.svg";
 
 const Scheme = () => {

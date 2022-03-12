@@ -6,6 +6,8 @@ body {
     @include font($size: 1.6rem, $height: 2.6rem, $weight: normal);
     background-color: $color-main;
     max-width: $content-width;
+    color: $color-text;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 90%;
     margin: 20px auto;
 

@@ -1,0 +1,72 @@
+@import "../../styles/abstract/_constants";
+@import "../../styles/abstract/_mixins";
+
+.footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+
+    @include media-tablet {
+        flex-wrap: wrap;
+    }
+
+    @include media-mobile {
+        flex-direction: column;
+    }
+
+    &__column {
+        //    outline: 1px dotted green;
+        flex-basis: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        justify-content: center;
+        margin-right: 50px;
+        margin-bottom: 20px;
+
+        @include media-mobile {
+            margin-right: 0;
+        }
+    }
+
+    &__column:last-of-type {
+        margin-right: 0;
+    }
+
+    &__social-list {
+        display: flex;
+        justify-content: space-between;
+        width: 150px;
+    }
+
+    &__social-link {
+        display: block;
+        width: 25px;
+        height: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &--insta {
+            background-image: url('../../images/insta.svg');
+        }
+
+        &--vk {
+            background-image: url('../../images/vk.svg');
+        }
+
+        &--telegram {
+            background-image: url('../../images/t.svg');
+        }
+
+        &--whatsapp {
+            background-image: url('../../images/wh.svg');
+        }
+    }
+}

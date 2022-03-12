@@ -1,11 +1,11 @@
-import React from "react";
 import Header from "../../components/Header/Header";
 import Aquarium from "../../components/Aquarium/Aquarium";
 import About from "../../components/About/About";
 import Scheme from "../../components/Scheme/Scheme";
 import Feedback from "../../components/Feedback/Feedback";
+import Footer from "../../components/Footer/Footer";
 
-const Welcome = () => {
+const WelcomePage = () => {
 	const aboutItems = [
 		"что это Lorem ipsum — классический текст-«рыба» (условный, зачастую бессмысленный текст-заполнитель, вставляемый в макет страницы). Является искажённым отрывком из философского трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в 45 году до н. э.",
 		"цели Lorem ipsum — классический текст-«рыба» (условный, зачастую бессмысленный текст-заполнитель, вставляемый в макет страницы). Является искажённым отрывком из философского трактата Марка Туллия Цицерона «О пределах добра и зла», написанного в 45 году до н. э.",
@@ -19,8 +19,9 @@ const Welcome = () => {
 			<About title="BLA_BLA" aboutItems={aboutItems} />
 			<Scheme />
 			<Feedback />
+			<Footer />
 		</>
 	);
 };
 
-export default Welcome;
+export default WelcomePage;
