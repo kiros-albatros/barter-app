@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, HashRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
 import App from "./App";
@@ -40,10 +40,10 @@ const reducer = (state = defaultState, action) => {
 const store = createStore(reducer);
 
 ReactDOM.render(
-	<BrowserRouter>
+	<HashRouter>
 		<Provider store={store}>
 			<App />
 		</Provider>
-	</BrowserRouter>,
+	</HashRouter>,
 	document.getElementById("root")
 );
