@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/barter-app/static/css/main.9a307643.css",
+    "main.js": "/barter-app/static/js/main.95292f00.js",
+    "static/media/5.png": "/barter-app/static/media/5.bf1e3bb748f07c7e8cab.png",
+    "static/media/1.png": "/barter-app/static/media/1.fabf5cbbade07c1ff734.png",
+    "static/media/6.jpg": "/barter-app/static/media/6.aea6e4092fc4d3302106.jpg",
+    "static/media/2.jpeg": "/barter-app/static/media/2.d7f3d36a8354444f7460.jpeg",
+    "static/media/logo.jpg": "/barter-app/static/media/logo.bbe083330d0c9b00fd9e.jpg",
+    "static/media/vk.svg": "/barter-app/static/media/vk.5d5ea35c9e8bac59fe31.svg",
+    "static/media/insta.svg": "/barter-app/static/media/insta.8e99df050033420d0039.svg",
+    "static/media/wh.svg": "/barter-app/static/media/wh.490a4398222684197e58.svg",
+    "static/media/t.svg": "/barter-app/static/media/t.33cf3044f0dc3e204ddb.svg",
+    "index.html": "/barter-app/index.html",
+    "static/media/next.svg": "/barter-app/static/media/next.8e47f9425b961cc189a837a21dae3c0d.svg",
+    "main.9a307643.css.map": "/barter-app/static/css/main.9a307643.css.map",
+    "main.95292f00.js.map": "/barter-app/static/js/main.95292f00.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a307643.css",
+    "static/js/main.95292f00.js"
+  ]
+}
