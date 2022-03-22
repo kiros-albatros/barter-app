@@ -40,10 +40,10 @@ const reducer = (state = defaultState, action) => {
 const store = createStore(reducer);
 
 ReactDOM.render(
-	<HashRouter>
+	<BrowserRouter>
 		<Provider store={store}>
 			<App />
 		</Provider>
-	</HashRouter>,
+	</BrowserRouter>,
 	document.getElementById("root")
 );

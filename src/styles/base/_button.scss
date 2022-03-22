@@ -13,6 +13,10 @@ button {
 }
 
 .btn {
+    min-width: 120px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     border-radius: 40px;
     background-color: $color-primary;
     color: $color-main;

@@ -31,3 +31,21 @@ h2 {
     margin: auto;
     text-align: center;
 }
+
+.MuiOutlinedInput-root:hover {
+    .MuiOutlinedInput-notchedOutline {
+        border-color: $color-primary-hover !important;
+    }
+}
+
+.MuiOutlinedInput-root {
+    color: $color-primary !important;
+}
+
+.Mui-checked {
+    color: $color-primary !important;
+}
+
+.MuiTypography-root {
+    color: $color-primary !important;
+}

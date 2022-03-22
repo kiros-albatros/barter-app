@@ -6,6 +6,16 @@ import { Link } from "react-router-dom";
 const Navigation = ({ menu }) => {
 	const mobileNav = useSelector((state) => state.mobileNav);
 
+	function askApi() {
+		fetch("http://barter-server/omar", {
+			method: "get",
+		})
+			.then((response) => response.text())
+			.then((response) => {
+				console.log(response);
+			});
+	}
+
 	return (
 		<nav className={`nav ${mobileNav}`}>
 			<ul className="nav__list">
@@ -19,8 +29,12 @@ const Navigation = ({ menu }) => {
 			</ul>
 
 			<div className="entry">
-				<button className="btn btn--entry">Войти</button>
-				<button className="btn btn--registration">Регистрация</button>
+				<Link to="/auth" className="btn btn--entry" onClick={askApi}>
+					Войти
+				</Link>
+				<button onClick={askApi} className="btn btn--registration">
+					Регистрация
+				</button>
 			</div>
 		</nav>
 	);

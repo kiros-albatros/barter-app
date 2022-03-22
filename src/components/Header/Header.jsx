@@ -7,15 +7,15 @@ const Header = () => {
 	// пакуем объекты в массив для array.map в глупом компоненте
 	const menu = [
 		{
-			link: "/AboutPage",
+			link: "/about",
 			label: "О нас",
 		},
 		{
-			link: "/FindInsiderPage",
+			link: "/find",
 			label: "Найти инсайдера",
 		},
 		{
-			link: "/InstallAppPage",
+			link: "/install",
 			label: "Установить приложение",
 		},
 	];
