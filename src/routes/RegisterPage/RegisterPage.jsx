@@ -2,7 +2,7 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import RegisterForm from "../../components/RegisterForm/RegisterForm";
 
-const Auth = () => {
+const RegisterPage = () => {
 	return (
 		<div className="auth">
 			<Header />
@@ -12,4 +12,4 @@ const Auth = () => {
 	);
 };
 
-export default Auth;
+export default RegisterPage;

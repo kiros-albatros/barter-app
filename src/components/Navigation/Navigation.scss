@@ -54,4 +54,6 @@
 .nav--show {
     visibility: visible;
     left: 0;
+    background-color: $color-main;
+    z-index: 50;
 }
